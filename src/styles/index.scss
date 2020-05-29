@@ -126,8 +126,9 @@ p.tagline, .address-detail a.tagline {
   color: #fff;
   line-height: 97px; }
 .side-right .trans-overlay-dark {
-  background-color: #735A49;
+  background: #000;
   /* The Fallback */
+  background: rgba(0, 0, 0, 0.3);
   position: absolute;
   left: 0;
   z-index: -1; }
@@ -171,9 +172,7 @@ p.tagline, .address-detail a.tagline {
   margin-bottom: 23px;
   background: #fff; }
 .page-left .page-inner .trans-overlay-dark-about {
-  background: #000;
-  /* The Fallback */
-  background: rgba(0, 0, 0, 0.25);
+  background-color: #735A49;
   position: absolute;
   top: 0;
   height: 100%;

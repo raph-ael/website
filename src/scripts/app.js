@@ -1,6 +1,9 @@
 import api from './api';
+
 const app = {
     init: () => {
+
+        api.init();
         
         const $qs = (selector) => {
             return document.querySelector(selector);

@@ -2,6 +2,7 @@ import simpleAJAX from "./simple_ajax";
 
 const api = {
     http: null,
+    prefix: '/api/v1',
 
     init: () => {
         api.http = new simpleAJAX;
@@ -19,7 +20,7 @@ const api = {
             options.success = () => {};
         }
 
-        api.http.post(uri, data, function (err, response) {
+        api.http.post(api.prefix + uri, data, function (err, response) {
             if(err) {
                 options.error(err);
             }

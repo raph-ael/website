@@ -105,7 +105,7 @@ const app = {
                 message: $input_message.value
             };
 
-            api.post('contact.php', data,{
+            api.post('/contact', data,{
 
                 success: () => {
 
